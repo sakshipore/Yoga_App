@@ -11,10 +11,7 @@ class BreakTime extends StatelessWidget {
     return ChangeNotifierProvider<TimerModelSec>(
       create: (context) => TimerModelSec(context),
       child: Scaffold(
-        body: AnimatedOpacity(
-          opacity: 0.5,
-          duration: const Duration(seconds: 20),
-          child: Container(
+        body: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
@@ -22,6 +19,7 @@ class BreakTime extends StatelessWidget {
                 // fit: BoxFit.cover,
                 image: NetworkImage(
                     "https://img.freepik.com/premium-vector/young-slim-woman-doing-yoga-exercise-urdhva-mukha-shvanasana-upward-facing-dog-pose_534489-598.jpg?w=740"),
+                opacity: 0.5,
               ),
             ),
             child:
@@ -98,7 +96,6 @@ class BreakTime extends StatelessWidget {
               ),
             ]),
           ),
-        ),
       ),
     );
   }
