@@ -12,7 +12,7 @@ class BreakTime extends StatelessWidget {
       create: (context) => TimerModelSec(context),
       child: Scaffold(
         body: AnimatedOpacity(
-          opacity: 0.5,
+          opacity: 1,
           duration: const Duration(seconds: 20),
           child: Container(
             height: MediaQuery.of(context).size.height,
@@ -20,6 +20,7 @@ class BreakTime extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 // fit: BoxFit.cover,
+                opacity: 0.5,
                 image: NetworkImage(
                     "https://img.freepik.com/premium-vector/young-slim-woman-doing-yoga-exercise-urdhva-mukha-shvanasana-upward-facing-dog-pose_534489-598.jpg?w=740"),
               ),
