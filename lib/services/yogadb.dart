@@ -16,7 +16,7 @@ class YogaDatabase {
   }
 
   Future<Database?> get database async {
-    if (_database != null) return _database;
+    if (_database != null) return _database; 
     _database = await _initializeDB("YogaStepsDB.db");
     return _database;
   }
